@@ -2,9 +2,15 @@
 <!-- NOTE: the string 'TODO' appears everywhere you need to fill in information. -->
 <html>
 <head>
-<title>Jump-duck</title>
+<title>TODO:Title For Your Game</title>
 <!-- NOTE: this CSS sets up the ".figure" class to center images, and instructs images in ".figure"s to have space around them and to render crisp pixel edges when scaled [e.g. for retina displays]. -->
 <style>
+body {
+	background:#fff;
+	color:#000;
+	margin:0;
+	padding:0;
+}
 .figure {
 	text-align:center;
 }
@@ -12,38 +18,58 @@
 	margin: 0px 20px;
 	image-rendering: pixelated;
 }
+h1 {
+	margin:0;
+	padding: 5px 5px 0 5px;
+	background:#ddd;
+}
+#author {
+	margin:0;
+	padding: 0 10px 0 30px;
+	border-bottom: 3px solid #ccc;
+	background:#ddd;
+}
+h2 {
+	margin:1em 0;
+	padding: 5px 5px 5px 0;
+	background:#ddd;
+	border-bottom: 3px solid #ccc;
+}
+h1, #author, h2 {
+	background: linear-gradient(to right,
+		#dddddd   0%, #dddddd  75%,
+		#dce8d2  75%, #d2e8e1  80%,
+		#d2e8e1  80%, #d2e8e1  85%,
+		#d2e2e8  85%, #d2e2e8  90%,
+		#d7d2e8  90%, #d7d2e8  95%,
+		#e8d2e8  95%, #e8d2e8 100%);
+}
+p {
+	margin: 1em;
+}
 </style>
 </head>
 <body>
-<h1>Jump-duck</h1>
-<p>Kinda like Pacman, but with physics. You jump around collecting targets while avoiding enemies, and go for a high score.</p>
+<h1>TODO: Title For Your Game</h1>
+<div id="author">by: TODO Your Name (TODO your andrewid)</div>
+<p>TODO: one-sentence summary of your game, highlighting the unique "hook" of the game.</p>
 <!-- the <div> wrapping this image centers it on the page. -->
 <!-- TODO: drawing showing the main view of the game during play -->
 <div class="figure">
 <img src="game.png" />
 </div>
-<p>The goal of the game is to collect the most targets. You collect targets by jumping into them and then landing on the ground. You lose when one of the
-enemies reaches you. The enemies slowly track towards you, with a new enemy spawning after every 10 targets collected. Faster enemies spawn later in the game.
-New targets spawn randomly when old ones are collected.</p>
+<p>TODO: more information (2-3 sentences) about gameplay, referring to the image above.</p>
 
 <h2>Gameplay</h2>
-<p>The game is controlled with the arrow keys to aim the direction of jump, and the spacebar to initiate the jump. Holding the space bar allows for a higher jump.
-A white line shows your direction, and a red line appears as you hold down the space bar and grows in size, determining how fast you will fly. Once liftoff is reached, you will fly in a parabola,
-letting gravity take you back down and collecting any targets along the way, gathering points. Once you reach the ground, more targets will spawn, some new enemies may spawn, and you will be able
-to line up a new jump. You can also bounce off the side walls and the ceiling if the power is really high.
-<br><br>
-Touching an enemy at any point (either in the air or waiting too long to initiate a jump) causes a game over, and prompts for a reset.</p>
+<p>TODO: Describe how the game starts, plays (e.g. what are the controls), and ends.</p>
 <!-- TODO: illustrate your descriptions with more drawings -->
 <div class="figure">
-<img src="before-shot.png" />
-<img src="after-shot.png" />
+<img src="before-reset.png" />
+<img src="after-reset.png" />
 </div>
 
 <h2>Assets</h2>
-<p>The assets are located <a href="https://kenney.nl/assets/shooting-gallery">here</a>. The main character is the duck, and the enemies are the geese. The white geese are faster. The targets are the collectables.
-The score font can be used to display score, and the grass/trees can be used to spruce up the background. </p>
-<div class="figure">
-<img src="preview.png" />
-</div>
+<p>TODO: Provide a link to any preliminary 3D models, sounds, or <a href="https://github.com/ixchow/amoeba-escape/blob/master/tiles.png">textures</a> for the game. Make sure to only link to assets with appropriate licenses.</p>
+
 </body>
 </html>
